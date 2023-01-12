@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Rapid API Web APP</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Chuck Norris jokes -->
+    <div class="display-4 text-center">Retrieving Data from RapidAPI</div><hr class="mySeparator">
+
+  <div class="display-4 text-center">Chuck Norris jokes</div>
+  <div class="APIContainer">
+    <div class="jokeContainer">
+      <img class="img-thumbnail" id="jokeIcon">
+      <div>
+        <a class="h2 jokeTitle" href="#">Want to hear a joke?</a>
+        <p id="joke"></p>
+      </div>
+      <button class="btn btn-primary" id="buttonGetJoke">Yes!</button>
+    </div>
+  </div>
+
+  <!-- Currency exchange rates -->
+  <div class="display-4 text-center">Currency exchange rates</div>
+  <div class="APIContainer">
+    <h4>Find out current currency exchange rates</h4>
+    <div class="currencyContainer">
+      <div style="margin-top: 16px">
+          <p>From: </p>
+          <p>To: </p>
+      </div>
+      <div style="margin-left: 20px">
+        <input class="form-control marginTopBottom" type="text" id="inputCurrencyFrom" value="EUR">
+        <input class="form-control marginTopBottom" type="text" id="inputCurrencyTo" value="USD">
+        <button class="btn btn-primary" id="buttonCurrency">Calculate</button>
+      </div>
+      <div class="currencyResult">
+        <h4 id="currencyResult">Result: 0</h4>
+      </div>
+    </div>
+  </div>
+  
+  <!-- COVID 19 data -->
+  <div class="display-4 text-center">Latest COVID 19 statistics</div>
+  <div class="APIContainer">
+    <div class="covidInput">
+      <p>Select a country:</p>
+      <select class="form-control" id="countries">
+        <option>Select a country</option>
+      </select>
+    </div>
+    <hr class="mySeparator">
+    <div class="text-center">
+      <p class="marginTopBottom" id="covidNewConfirmed">New confirmed cases: /</p>
+      <p class="marginTopBottom" id="covidTotalConfirmed">Total confirmed cases: /</p>
+      <p class="marginTopBottom" id="covidNewDeaths">New deaths: /</p>
+      <p class="marginTopBottom" id="covidTotalDeaths">Total deaths: /</p>
+      <p class="marginTopBottom" id="covidLastUpdate">Last updated: /</p>
+    </div>
+  </div>
+      <script src="js/main.js" type="module"></script>
+      <footer>
+        <div class="APIContainer text-center" >
+            <p>Copyright &copy; 2023 <strong> Yussuf Mohamed </strong> All rights reserved</p>
+        </div>
+    </footer>
+  </body>
+</html>
